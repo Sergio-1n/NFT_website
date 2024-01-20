@@ -1,0 +1,128 @@
+.header {
+  max-width: 1197px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px 110px 15px;
+}
+.header__logo {
+  display: block;
+  background-image: url(../images/logo.svg);
+  background-repeat: no-repeat;
+  width: 130px;
+  height: 25px;
+}
+.header__list {
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+  font-size: 20px;
+  padding-left: 0;
+}
+.header__link {
+  color: var(--primery-light);
+  text-decoration: none;
+}
+.header__link_gradient {
+  background: linear-gradient(214deg, #b75cff 6.04%, #671ae4 92.95%);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+.container {
+  max-width: 1197px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header__search,
+.header__menu {
+  display: none;
+}
+
+.form {
+  position: relative;
+}
+.form__button {
+  display: block;
+  background-image: url(../images/search.svg);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: calc(50% - 10px);
+  left: 10px;
+}
+.form__input {
+  width: 384px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 10px;
+  padding: 8px 40px;
+  height: 50px;
+  font-size: 20px;
+}
+.form__input::placeholder {
+  color: var(--half-primery-light);
+}
+.form__input:focus {
+  outline: none;
+  color: var(--primery-light);
+}
+
+@media (max-width: 1130px) {
+  .header,
+  .container {
+    max-width: 900px;
+  }
+  .header__list {
+    gap: 20px;
+    font-size: 16px;
+  }
+  .form__input {
+    width: 260px;
+    padding: 13px 13px 13px 40px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 880px) {
+  .header,
+  .container {
+    max-width: 750px;
+  }
+  .header__buttons {
+    display: flex;
+  }
+  .form,
+  .header__nav {
+    display: none;
+  }
+  .header__search,
+  .header__menu {
+    display: block;
+    border: none;
+    background: transparent;
+    height: 20px;
+  }
+  .header__search {
+    background-image: url(../images/search-mobile.svg);
+    width: 20px;
+  }
+  .header__menu {
+    background-image: url(../images/menu-mobile.svg);
+    width: 26px;
+    margin-left: 22px;
+  }
+}
+@media (max-width: 600px) {
+  .header,
+  .container {
+    max-width: 400px;
+  }
+  .header {
+    padding-bottom: 50px;
+  }
+}

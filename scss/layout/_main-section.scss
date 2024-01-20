@@ -1,0 +1,140 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__text {
+  flex-basis: 490px;
+}
+.main__title {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.main__desc {
+  font-size: 20px;
+  line-height: 1.8;
+  color: var(--half-primery-light);
+  margin-top: 0;
+  margin-bottom: 42px;
+}
+.main__image {
+  flex-basis: calc(100% - 490px - 116px);
+}
+.main__img {
+  width: 100%;
+}
+.main__btn {
+  font-size: 20px;
+  color: var(--primery-light);
+  text-decoration: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+}
+.main__btn_gradient {
+  background: linear-gradient(214deg, #b75cff 6.04%, #671ae4 92.95%);
+  margin-right: 16px;
+}
+.main__list {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+  gap: 110px;
+  margin-top: 60px;
+  margin-bottom: 24px;
+}
+.main__item {
+  color: var(--half-primery-light);
+  font-size: 20px;
+}
+.main__span {
+  display: block;
+  color: var(--primery-light);
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+.company {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+  margin-bottom: 142px;
+}
+@media (max-width: 1130px) {
+  .main__text {
+    flex-basis: 450px;
+  }
+  .main__image {
+    flex-basis: calc(100% - 450px - 30px);
+  }
+  .main__title {
+    font-size: 43px;
+  }
+  .main__desc,
+  .main__btn,
+  .main__item {
+    font-size: 18px;
+  }
+  .main__span {
+    font-size: 26px;
+  }
+  .main__list {
+    gap: 40px;
+  }
+  .company__img {
+    height: 52px;
+  }
+}
+@media (max-width: 880px) {
+  .main {
+    position: relative;
+  }
+  .main__image {
+    flex-basis: inherit;
+    position: absolute;
+    max-width: 33vw;
+    right: 0;
+    bottom: 0;
+  }
+  .company__img {
+    height: 5.6vw;
+  }
+}
+@media (max-width: 600px) {
+  .main__title,
+  .main__desc {
+    text-align: center;
+  }
+  .main__title {
+    font-size: 34px;
+  }
+  .main__desc,
+  .main__btn,
+  .main__item {
+    font-size: 16px;
+  }
+
+  .main__text {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .main__list {
+    justify-content: center;
+    gap: 20px;
+  }
+  .main__image {
+    display: none;
+  }
+  .company {
+    flex-direction: column;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .company__img {
+    margin-bottom: 15px;
+    height: 40px;
+  }
+}
