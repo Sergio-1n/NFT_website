@@ -37,7 +37,7 @@
 }
 
 .header__search,
-.header__menu {
+.header__burger {
   display: none;
 }
 
@@ -101,7 +101,7 @@
     display: none;
   }
   .header__search,
-  .header__menu {
+  .header__burger {
     display: block;
     border: none;
     background: transparent;
@@ -111,7 +111,7 @@
     background-image: url(../images/search-mobile.svg);
     width: 20px;
   }
-  .header__menu {
+  .header__burger {
     background-image: url(../images/menu-mobile.svg);
     width: 26px;
     margin-left: 22px;
